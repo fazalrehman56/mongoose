@@ -13,8 +13,12 @@ const todos = new mongoose.Schema({
 
     createdBY :{
      type : mongoose.Schema.Type.ObjectId,
-     ref : "User"
+     ref : "User",
      require : true,
      
-    }
+    },
+    subtodos : [{
+        type:mongoose.Schema.Type.ObjectId,
+        ref : "SubTodos"
+    }]
 },{timestamps})
