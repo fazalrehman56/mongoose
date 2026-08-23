@@ -40,8 +40,12 @@ const orderSchema = new mongoose.Schema({
    priceTotal:{
         type : number,
         default : 0,
+   },
+   status :{
+    type : String,
+    enum :["pending","deliverd","cancelled"]
    }
-   
+
        
     
 },{timestamps})
