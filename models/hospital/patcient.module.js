@@ -1,21 +1,21 @@
 import mongoose, { Schema } from "mongoose";
 const pactentSchema = new mongoose.Schema({
-    item : {
+    name : {
         type : String,
         required : true,
     },
-    complete : {
+    report : {
         type : String,
         requried : true,
         bolean : true,
         default : false,
     },
-
-    createdBY :{
-     type : mongoose.Schema.Type.ObjectId,
-     ref : "User",
-     require : true,
-     
+    desease : {
+        type : String,
+        require : true
     }
+
+
+   
 },{timestamps})
 const pactent = Schema.module("pactent",pactentSchema);
