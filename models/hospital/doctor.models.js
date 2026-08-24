@@ -16,6 +16,10 @@ const DoctorSchema = new mongoose.Schema({
     experince :{
         type : Number,
         require : true,
+    },
+    workingHour:{
+      type : Number,
+        require : true,
     }
 
 
