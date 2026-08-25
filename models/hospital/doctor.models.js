@@ -19,7 +19,7 @@ const DoctorSchema = new mongoose.Schema({
     },
     workingHour:{
       type : Number,
-        require : true,
+        required : true,
     },
     expectedSalry : {
         type:Number,
