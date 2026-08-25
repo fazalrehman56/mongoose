@@ -23,7 +23,7 @@ const DoctorSchema = new mongoose.Schema({
     },
     expectedSalry : {
         type:Number,
-        requrie : true,
+        requried : true,
     }
 
    
